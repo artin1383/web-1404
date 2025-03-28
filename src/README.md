@@ -9,6 +9,7 @@
 نتایج و فرمول های ما :
 <formula evaluator="count * fee - discount"></formula>
 از این ویژگی evaluator برای محاسبه استفاده کردیم 
+## 1. فایل `stlyles.css` - قالب بندی صفحه
 در فایل css هم ریسپانسیو بودن با flex grid هندل شده است و ظاهری شکیل دادیم.
 class FormulaCalculator {
   constructor() {
