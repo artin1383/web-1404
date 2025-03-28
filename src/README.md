@@ -10,7 +10,7 @@
 <formula evaluator="count * fee - discount"></formula>
 از این ویژگی evaluator برای محاسبه استفاده کردیم 
 در فایل css هم ریسپانسیو بودن با flex grid هندل شده است و ظاهری شکیل دادیم.
-```js
+```javascript
 class FormulaCalculator {
   constructor() {
     this.formulas = document.querySelectorAll('formula'); // انتخاب تمام فرمول‌ها
