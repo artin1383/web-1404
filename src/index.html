@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ماشین حساب فرمولی</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>محاسبه‌گر فرمولی</h1>
+
+    <div class="input-group">
+        <div class="input-box">
+            <label for="fee">قیمت واحد</label>
+            <input type="number" id="fee" placeholder="قیمت واحد (مثال: 20)">
+        </div>
+
+        <div class="input-box">
+            <label for="count">تعداد</label>
+            <input type="number" id="count" placeholder="تعداد (مثال: 4)">
+        </div>
+
+        <div class="input-box">
+            <label for="discount">تخفیف</label>
+            <input type="number" id="discount" placeholder="تخفیف (مثال: 30)">
+        </div>
+    </div>
+
+    <div class="formulas">
+        <div class="formula-item">
+            <h3>جمع کل قبل از تخفیف</h3>
+            <formula evaluator="count * fee"></formula>
+        </div>
+        <div class="formula-item">
+            <h3>جمع کل بعد از تخفیف</h3>
+            <formula evaluator="count * fee - discount"></formula>
+        </div>
+        <div class="formula-item">
+            <h3>مالیات</h3>
+            <formula evaluator="0.1 * (count * fee - discount)"></formula>
+        </div>
+        <div class="formula-item">
+            <h3>مبلغ پرداختی</h3>
+            <formula evaluator="1.1 * (count * fee - discount)"></formula>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

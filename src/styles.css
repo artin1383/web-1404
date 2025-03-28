@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    font-family: IRANSans;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f2f5;
+
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #1a73e8;
+}
+
+label {
+   font-size: 15px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-width: 200px;
+}
+
+.formulas {
+    display: grid;
+    gap: 15px;
+}
+
+.formula-item {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+
+formula {
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #1a73e8;
+    cursor: not-allowed;
+}
+.input-box{
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+}
+
+@media (max-width: 600px) {
+    .input-group {
+        flex-direction: column;
+    }
+}
