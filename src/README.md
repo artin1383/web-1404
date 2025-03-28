@@ -1,5 +1,12 @@
-مشابه فایل تمرین سه تا ورودی گذاشتم به حالت باکس های زیر 
- <div class="input-box">
-            <label for="fee">قیمت واحد</label>
-            <input type="number" id="fee" placeholder="قیمت واحد (مثال: 20)">
-</div>
+
+---
+
+## توضیحات کد
+
+### ۱. فایل `index.html`
+- **ورودی‌ها**:  
+  ۳ فیلد عددی برای دریافت مقادیر زیر:
+  ```html
+  <input type="number" id="fee" placeholder="قیمت واحد (مثال: 20)">
+  <input type="number" id="count" placeholder="تعداد (مثال: 4)">
+  <input type="number" id="discount" placeholder="تخفیف (مثال: 30)">
