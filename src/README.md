@@ -1,12 +1,24 @@
+# توضیحات کامل بخش‌های سه فایل پروژه
 
----
+## 1. فایل `index.html` - ساختار اصلی صفحه
+ورودی های برنامه :
+<div class="input-box">
+  <label for="fee">قیمت واحد</label>
+  <input type="number" id="fee" placeholder="قیمت واحد (مثال: 20)">
+</div>
+نتایج و فرمول های ما :
+<formula evaluator="count * fee - discount"></formula>
+از این ویژگی evaluator برای محاسبه استفاده کردیم 
+در فایل css هم ریسپانسیو بودن با flex grid هندل شده است و ظاهری شکیل دادیم.
+class FormulaCalculator {
+  constructor() {
+      انتخاب تمام فرمول‌ها
 
-## توضیحات کد
+    this.formulas = document.querySelectorAll('formula'); 
+        انتخاب ورودی‌ها
+    this.inputs = document.querySelectorAll('input[type="number"]');  
+        استخراج همه آیدی ها
 
-### ۱. فایل `index.html`
-- **ورودی‌ها**:  
-  ۳ فیلد عددی برای دریافت مقادیر زیر:
-  ```html
-<input type="number" id="fee" placeholder="قیمت واحد (مثال: 20)">
-<input type="number" id="count" placeholder="تعداد (مثال: 4)">
-<input type="number" id="discount" placeholder="تخفیف (مثال: 30)">
+    this.ids = Array.from(this.inputs).map(input => input.id);  
+    
+  }
